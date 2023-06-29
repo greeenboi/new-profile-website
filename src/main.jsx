@@ -19,5 +19,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     />
   </React.StrictMode>,
 )
-, 3000
+, 3500
 );
