@@ -10,7 +10,7 @@ Title: Python Programming language
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
-export default function Model(props) {
+export default function Python(props) {
   const { nodes, materials } = useGLTF('../Python-transformed.glb')
   return (
     <group {...props} dispose={null}>

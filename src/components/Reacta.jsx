@@ -10,7 +10,7 @@ Title: React logo
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
-export default function Model(props) {
+export default function Reacta(props) {
   const { nodes, materials } = useGLTF('../reacta-transformed.glb')
   return (
     <group {...props} dispose={null}>

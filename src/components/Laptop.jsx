@@ -10,7 +10,7 @@ Title: CyberPunk Laptop
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
-export default function Model(props) {
+export default function Laptop(props) {
   const { nodes, materials } = useGLTF('../laptop-transformed.glb')
   return (
     <group {...props} dispose={null}>

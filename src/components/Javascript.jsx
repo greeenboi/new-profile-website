@@ -6,7 +6,7 @@ Command: npx gltfjsx@6.2.4 javascript.gltf --transform
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
-export default function Model(props) {
+export default function JavaScript(props) {
   const { nodes, materials } = useGLTF('../javascript-transformed.glb')
   return (
     <group {...props} dispose={null}>
