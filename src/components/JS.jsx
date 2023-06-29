@@ -1,5 +1,5 @@
 import React from 'react'
-import JavaScript from './JavaScript'
+import JavaScript from './Javascript'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Stage, Preload } from '@react-three/drei'
 
