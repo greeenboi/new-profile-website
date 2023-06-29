@@ -9,8 +9,12 @@ import { motion } from "framer-motion";
 
 const Section = styled.div`
   height: 100vh;
-  background-color:rgb(80,80,80);
+  
   scroll-snap-align: center;
+  background: url("./img/pg2-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 `;
 
 const Container = styled.div`
@@ -41,11 +45,30 @@ const Card = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap:20px;
-  padding:2rem;
-  background-color:rgba(90,90,90,0.2);
+  margin:0px;
+  padding:3rem;
+  background-color:rgba(90,90,90,0.15);
+  border-radius:2px;
+`
+const Card_text = styled.div`
+  font-family: 'Poppins', sans-serif;
+  line-height:30px;
+  word-wrap: break-word;
 `
 
+const Title = styled.h1`
+  font-size: 70px;
+  font-family: 'Raleway',sans-serif;
+  
+  color: rgb(255,255,255);
+  
+`
+
+const WhatWeDo = styled.div`
+  display: flex;
+  align-items: center;
+  gap:10px;
+`;
 
 
 const Who = () => {
@@ -67,6 +90,7 @@ const Who = () => {
           </Canvas> 
         </Left>
         <Right>
+        <Title>About Me</Title>
         <Card>
         <motion.div
                 variants={{
@@ -78,14 +102,21 @@ const Who = () => {
                 viewport={{once:true,amount: 0.8}}
                 transition={{duration: 0.5, delay: 0.25, ease: "easeInOut"}}
               >
-            <Card-text><p>
-              
+            <Card_text>
+            <p className="first_letter">
               I have always been intrigued by the intricacies of the digital world.
+            </p>
+            <p>
               It started when I made my first C program all the way back in 2015 with the help of my dad. It was a simple hello world, but it set me upon the path I currently follow.
-              Then came my first IOT project at my 9th grade, a simple Raspberry PI 3B+ running rpi os, My first Website, My first 2D Game (mario), and many more.
-              Now I aspire To make The coolest Website, The Best Game and the Smartest AI.
-
-            </p></Card-text>
+            </p>
+            <p>
+               Then came my first IOT project , a simple Raspberry PI 3B+ running noobs os, My first Website, My first 2D Game (mario), and many more.
+            </p>
+            <p>
+              In my free time, I make things that I find interesting and uploading them to my Github.
+            </p>
+            
+            </Card_text>
         </motion.div>
         </Card>
         </Right>

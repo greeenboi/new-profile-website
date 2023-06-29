@@ -6,11 +6,11 @@ import { OrbitControls, Stage } from '@react-three/drei'
 const Cool = () => {
   return (
     <Canvas>
-      <Stage environment="city" intensity={0.7}>
+      <Stage environment="city" intensity={0.7} adjustCamera={1.3}>
 
       <Laptop />
       </Stage>
-      <OrbitControls enableZoom={true} autoRotate={true}/>
+      <OrbitControls enableZoom={true} autoRotate={true} />
     </Canvas>
   )
 }

@@ -59,7 +59,23 @@ const Right = styled.div`
   flex:1;
   justify-content: center;
 `
-
+const Title = styled.h1`
+  font-size: 70px;
+  font-family: 'Space Mono', monospace;
+  border-radius: clamp(0.4rem, 0.75vw, 1rem);
+  color: rgba(0,0,0,0.2);
+  -webkit-text-stroke: 1px rgba(0,0,0,0.5);
+`;
+const Titlewrap = styled.div`
+  &:hover .h1_class{
+    color: rgba(0,0,0,0.3);
+  }
+`
+const WhatWeDo = styled.div`
+  display: flex;
+  align-items: center;
+  gap:10px;
+`;
 
 const Works = () => {
   const [work, setWork] = useState("")
@@ -147,6 +163,7 @@ const Works = () => {
           )}
         </Left>
         <Right>
+          
           <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>

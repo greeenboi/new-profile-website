@@ -119,7 +119,7 @@ const Hero = () => {
                   <Line src="./img/rarrow.png"/>
                   <Subtitle src="https://readme-typing-svg.herokuapp.com?font=Raleway&duration=3000&pause=1500&color=0a0a0a80&background=00000006&width=550&height=60&lines=I+am+a+Full-stack+Web+Developer+and+a+Software+Engineer;I+like+making+stuff+online;Scroll+to+know+more+about+me"/>
               </WhatWeDo>
-              <Desc>2nd year student at SRM Institute of Science and Technology</Desc>
+              <Desc className='first_letter'>2nd year student at SRM Institute of Science and Technology</Desc>
               <Wrapper ><Button className="button_class">Learn More</Button></Wrapper>
               
             </Left>
