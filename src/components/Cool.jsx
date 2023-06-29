@@ -10,7 +10,7 @@ const Cool = () => {
 
       <Laptop />
       </Stage>
-      <OrbitControls enableZoom={false} autoRotate={true}/>
+      <OrbitControls enableZoom={true} autoRotate={true}/>
     </Canvas>
   )
 }

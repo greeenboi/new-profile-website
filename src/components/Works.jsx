@@ -51,6 +51,7 @@ const Left = styled.div`
   flex:1;
   flex-direction: column;
   justify-content: center;
+  cursor: grab;
 `
 
 const Right = styled.div`
