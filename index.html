@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space Mono"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Roboto', sans-serif;   
+        
+      }
+      .loader{
+        overflow-y: hidden;
+        background-color: #101010;
+        pointer-events: none;
+        user-select: none;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+      }
+      .sk-cube-grid {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        margin: 45vh auto;
+        
+      }
+
+      .sk-cube-grid .sk-cube {
+        width: 33%;
+        height: 33%;
+        background-color: #555454;
+        float: left;
+        border: 1px solid #b8b6b6;
+        animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+      }
+
+      .sk-cube-grid .sk-cube1 {
+        animation-delay: 0.2s;
+      }
+
+      .sk-cube-grid .sk-cube2 {
+        animation-delay: 0.3s;
+      }
+
+      .sk-cube-grid .sk-cube3 {
+        animation-delay: 0.4s;
+      }
+
+      .sk-cube-grid .sk-cube4 {
+        animation-delay: 0.1s;
+      }
+
+      .sk-cube-grid .sk-cube5 {
+        animation-delay: 0.2s;
+      }
+
+      .sk-cube-grid .sk-cube6 {
+        animation-delay: 0.3s;
+      }
+
+      .sk-cube-grid .sk-cube7 {
+        animation-delay: 0s;
+      }
+
+      .sk-cube-grid .sk-cube8 {
+        animation-delay: 0.1s;
+      }
+
+      .sk-cube-grid .sk-cube9 {
+        animation-delay: 0.2s;
+      }
+
+      @keyframes sk-cubeGridScaleDelay {
+        0%,
+        70%,
+        100% {
+          transform: scale3D(1, 1, 1);
+        }
+        35% {
+          transform: scale3D(0, 0, 1);
+        }
+      }
+    </style>
+    <title>React App</title>
+  </head>
+  <body>
+    
+    <div id="root"></div>
+    <script defer type="module" src="/src/main.jsx"></script>
+
+    <div class="loader">
+      <div class="sk-cube-grid">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
+      </div>
+    </div>
+    
+    
+  </body>
+</html>
