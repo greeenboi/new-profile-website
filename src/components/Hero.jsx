@@ -6,6 +6,7 @@ import {motion} from "framer-motion"
 
 const Section = styled.div`
   height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,7 +21,7 @@ const Section = styled.div`
 
 const Container = styled.div`
   height: 100vh;
-  width: 1400px;
+  width: 100vw;
   scroll-snap-align: center;
   justify-content: space-between;
   display: flex;
