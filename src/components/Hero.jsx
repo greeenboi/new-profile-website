@@ -30,6 +30,7 @@ const Container = styled.div`
 const Left = styled.div`
   flex:2;
   display: flex;
+  padding-left:2rem;
   flex-direction: column;
   justify-content: center;
   gap:20px;
