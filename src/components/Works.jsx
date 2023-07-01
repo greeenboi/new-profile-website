@@ -6,6 +6,7 @@ import JS from './JS';
 import Reactas from './Reactas';
 import Pythona from './Pythona';
 
+
 const Section = styled.div`
   height: 100vh;
   scroll-snap-align: center;
@@ -59,6 +60,34 @@ const Right = styled.div`
   flex:1;
   justify-content: center;
 `
+const Button = styled.button`
+    align-items: center;
+    width: 40%;
+    display: flex;  
+    flex-direction: row;
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;   
+    color:#fff;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;        
+    justify-content: center;
+    margin-left:3rem;
+    padding: 10px;
+    transition: background-color 400ms, border-color 400ms;   
+`;
+const Wrapper = styled.div`
+    &:hover .button_class{
+        background-color: rgba(100,108,255,0.2);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    } 
+    .image_class{
+      padding:0.3rem;
+      height:30px;
+    }
+`;
+
 const Title = styled.h1`
   font-size: 70px;
   font-family: 'Space Mono', monospace;
@@ -79,6 +108,12 @@ const WhatWeDo = styled.div`
 
 const Works = () => {
   const [work, setWork] = useState("")
+
+  const [isDivVisible, setIsDivVisible] = useState(false);  
+  const toggleDiv = () => {
+    setIsDivVisible(prevIsDivVisible => !prevIsDivVisible);
+  };
+
   return (
     
     <Section  > 
@@ -152,16 +187,26 @@ const Works = () => {
 
       <Bottom>
         <Left>
-          {work==="py"?(
-            <Pythona />
+      {isDivVisible ?(
+        <>
+          {work ==="py"?(
+            <Pythona onClick={toggleDiv} />
           ) : work === "js"?(
-            <JS />
+            <JS onClick={toggleDiv} />
           ) : work === "react"?(
-            <Reactas />
+            <Reactas onClick={toggleDiv} />
           ) : (
-            <Cool />
-          )}
-        </Left>
+            <Cool onClick={toggleDiv} />
+          )} 
+          </> ): (
+          
+          <Wrapper>
+            <Button onClick={toggleDiv} className='button_class'><img src="./img/hidden.png" className='image_class'/>Show 3D Assets</Button> 
+          </Wrapper>
+        
+          )
+          }
+          </Left>
         <Right>
           
           <p>

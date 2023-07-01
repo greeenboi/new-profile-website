@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useState } from "react"
 import styled from 'styled-components'
 import { Canvas } from "@react-three/fiber"
 import { OrbitControls, Sphere, MeshDistortMaterial, Preload } from "@react-three/drei";
@@ -11,7 +11,7 @@ const Section = styled.div`
   height: 100vh;
   
   scroll-snap-align: center;
-  background: url("./img/pg2-2.jpg");
+  background: url("./img/pg2-3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -63,6 +63,32 @@ const Title = styled.h1`
   color: rgb(255,255,255);
   
 `
+const Button = styled.button`
+    align-items: center;
+    width: 100%;
+    display: flex;  
+    flex-direction: row;
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;   
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    cursor: pointer;        
+    justify-content: center;
+    padding: 10px;
+    transition: background-color 400ms, border-color 400ms;   
+`;
+const Wrapper = styled.div`
+    &:hover .button_class{
+        background-color: rgba(100,108,255,0.2);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    } 
+    .image_class{
+      padding:0.3rem;
+      height:35px;
+    }
+`;
 
 const WhatWeDo = styled.div`
   display: flex;
@@ -73,12 +99,16 @@ const WhatWeDo = styled.div`
 
 const Who = () => {
 
-  
+  const [isDivVisible, setIsDivVisible] = useState(false);  
+  const toggleDiv = () => {
+    setIsDivVisible(prevIsDivVisible => !prevIsDivVisible);
+  };
 
   return (
     <Section>
       <Container>
         <Left>
+          {isDivVisible ?(
           <Canvas>        
             <OrbitControls enableZoom={false} />
             <ambientLight intensity={1} />
@@ -87,7 +117,12 @@ const Who = () => {
             <MeshDistortMaterial color="#220736" attach="material" distort={0.5} speed={2} />
             </Sphere>
             <Preload all />
-          </Canvas> 
+          </Canvas> ) : (
+            <Wrapper>
+              <Button onClick={toggleDiv} className='button_class'><img src="./img/hidden.png" className='image_class'/>Show Div</Button> 
+            </Wrapper>
+          )
+          }
         </Left>
         <Right>
         <Title>About Me</Title>

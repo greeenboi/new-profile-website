@@ -37,7 +37,7 @@ const Left = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 70px;
+  font-size: 80px;
   font-family: 'Space Mono', monospace;
   border-radius: clamp(0.4rem, 0.75vw, 1rem);
   color: rgba(0,0,0,0.2);
