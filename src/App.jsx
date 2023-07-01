@@ -32,6 +32,8 @@ function App({ hideLoader }) {
 
   useEffect(hideLoader, []);
 
+  
+
   return (
     <Container>
       

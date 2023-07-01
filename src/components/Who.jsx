@@ -90,14 +90,10 @@ const Wrapper = styled.div`
     }
 `;
 
-const WhatWeDo = styled.div`
-  display: flex;
-  align-items: center;
-  gap:10px;
-`;
 
 
-const Who = () => {
+
+const Who = (ref) => {
 
   const [isDivVisible, setIsDivVisible] = useState(false);  
   const toggleDiv = () => {

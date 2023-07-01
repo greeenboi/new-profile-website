@@ -1,4 +1,4 @@
-import React from 'react'
+import { React } from 'react'
 import styled from 'styled-components'
 
 
@@ -65,16 +65,19 @@ const Icons = styled.div`
 
 
 const Navbar = () => {
+
+    
+
   return (
     <Section>
         <Container>
             <Links>
             <Logo src="./img/logo.png"/>
-            <Icon src="./img/search.png"/>
+            
             <List>
                 <ListItem>Home</ListItem>
+                <ListItem>About</ListItem>
                 <ListItem>Works</ListItem>
-                <ListItem>stuff</ListItem>
                 <ListItem>Contact</ListItem>
             </List>
             </Links>
@@ -82,7 +85,7 @@ const Navbar = () => {
             <Icons >               
 
                 <Wrapper>
-                    <Button className="button_class">Support Me</Button>
+                    <Button className="button_class" >Support Me</Button>
                 </Wrapper>
                 
                 
