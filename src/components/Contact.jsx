@@ -32,6 +32,7 @@ const Left = styled.div`
   align-items: left;
   justify-content: center;
   flex-direction: column;
+  padding-left: 2rem;
   
 `;
 
@@ -41,6 +42,7 @@ const Right = styled.div`
   justify-content: flex;
   display: flex;
   flex-direction: column;
+  padding-right: 2rem;
 `;
 
 const Title = styled.h1`

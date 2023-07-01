@@ -36,12 +36,12 @@ const Map = () => {
         dx={-90}
         dy={-30}
         connectorProps={{
-          stroke: "#282828e6",
+          stroke: "rgba(100,95,100,0.8)",
           strokeWidth: 4,
           strokeLinecap: "round"
         }}
       >
-        <text x="-6" textAnchor="end" alignmentBaseline="middle" fill="#28282899" style={{fontFamily:"monospace",fontSize:"32px"}}>
+        <text x="-6" textAnchor="end" alignmentBaseline="middle" fill="#28282899" style={{fontFamily:"monospace",fontSize:"32px",fontWeight:"bold"}}>
           {"Find me here!"}
         </text>
       </Annotation>

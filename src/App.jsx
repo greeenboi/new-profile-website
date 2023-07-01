@@ -8,7 +8,7 @@ import { useEffect } from "react";
 
 const Container = styled.div`
   height: 100vh;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   scroll-behaviour: smooth ;
   overflow-y: auto; 
   scrollbar-width: none;
