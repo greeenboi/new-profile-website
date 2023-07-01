@@ -119,7 +119,7 @@ const Who = () => {
             <Preload all />
           </Canvas> ) : (
             <Wrapper>
-              <Button onClick={toggleDiv} className='button_class'><img src="./img/hidden.png" className='image_class'/>Show Div</Button> 
+              <Button onClick={toggleDiv} className='button_class'><img src="./img/hidden.png" className='image_class'/>Show 3D Asset</Button> 
             </Wrapper>
           )
           }

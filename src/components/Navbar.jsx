@@ -9,7 +9,7 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
-    width: 1400px;
+    width: 90vw;
     
     display: flex;
     justify-content: space-between;
@@ -37,11 +37,6 @@ const ListItem = styled.li`
 const Icon = styled.img`
     width: 30px;
     cursor: pointer;   
-    
-    
-    
-
-    
 `;
 const Button = styled.button`
     align-items: center;

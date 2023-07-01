@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Map from './Map';
-
+import Footer from './Footer'
 
 
 const Section = styled.div`
@@ -148,6 +148,7 @@ const Contact = () => {
           </Div>          
         </Right>
       </Container>
+      <Footer />
     </Section>
   )
 }
