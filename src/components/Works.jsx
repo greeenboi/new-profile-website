@@ -57,9 +57,27 @@ const Left = styled.div`
 
 const Right = styled.div`
   display: flex;
-  flex:1;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  gap:20px;
+  flex:2;
 `
+const Card = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:0px;
+  padding:2rem;
+  background-color:rgba(90,90,90,0.15);
+  border-radius:2px;
+`
+const Card_text = styled.div`
+  font-family: 'Poppins', sans-serif;
+  line-height:30px;
+  word-wrap: break-word;
+`
+
 const Button = styled.button`
     align-items: center;
     width: 40%;
@@ -90,21 +108,11 @@ const Wrapper = styled.div`
 
 const Title = styled.h1`
   font-size: 70px;
-  font-family: 'Space Mono', monospace;
-  border-radius: clamp(0.4rem, 0.75vw, 1rem);
-  color: rgba(0,0,0,0.2);
-  -webkit-text-stroke: 1px rgba(0,0,0,0.5);
+  font-family: 'Raleway',sans-serif;
+
+  color: rgb(255,255,255);
 `;
-const Titlewrap = styled.div`
-  &:hover .h1_class{
-    color: rgba(0,0,0,0.3);
-  }
-`
-const WhatWeDo = styled.div`
-  display: flex;
-  align-items: center;
-  gap:10px;
-`;
+
 
 const Works = () => {
   const [work, setWork] = useState("")
@@ -208,10 +216,22 @@ const Works = () => {
           }
           </Left>
         <Right>
-          
-          <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+          <Title>My Works</Title>
+          <Card>
+            <Card_text className='first_letter'>
+              <p>
+               I am a passionate backend engineer who primarily works with Python and Flask. 
+              </p>
+              <p>               
+               My expertise lies in utilizing various libraries for AI/ML implementations to develop robust backend solutions. 
+               In my free time, I love to delve into the world of JavaScript and React, where I indulge in building exciting and innovative projects. 
+               You can find some of my projects listed above, while the rest can be explored on my GitHub page. 
+              </p>
+              <p> 
+               Currently, I am dedicatedly working towards my goal of becoming a skilled and accomplished Software Engineer.
+              </p>
+            </Card_text>
+          </Card>
         </Right>
       </Bottom>
       </Container>

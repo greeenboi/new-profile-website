@@ -65,7 +65,8 @@ const Subtitle = styled.img`
 const Desc = styled.p`
   font-size:24px;
   background-color:#00000006;
-  color: rgba(10,10,10,0.5);
+  color: rgba(10,10,10,0.7);
+  -webkit-text-stroke: 1px rgba(250,250,250,0.2);
 `;
 const Button = styled.button`
     align-items: center;

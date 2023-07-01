@@ -150,6 +150,9 @@ const Who = () => {
             <p>
               In my free time, I make things that I find interesting and uploading them to my Github.
             </p>
+            <p>
+              Outside of work, I love to eat food and play video games.
+            </p>
             
             </Card_text>
         </motion.div>

@@ -33,6 +33,7 @@ const Left = styled.div`
   justify-content: center;
   flex-direction: column;
   padding-left: 2rem;
+
   
 `;
 
@@ -114,9 +115,15 @@ const Div = styled.div`
     border-radius:20px;
 
     cursor: move;
-    
-    
 `
+const Desc = styled.p`
+  padding:10px;
+  font-size:20px;
+  width:80%;
+  background-color:#00000006;
+  color: rgba(10,10,10,0.9);
+  -webkit-text-stroke: 1px rgba(250,250,250,0.2);
+`;
 
 const Contact = () => {
   return (
@@ -124,6 +131,7 @@ const Contact = () => {
       <Container>
         <Left>
         <Title>Contact Me</Title>
+        <Desc>Shoot me an email if you want to connect! You can also find me on Linkedin or Discord if that's more your speed.</Desc>
           <Form action="https://formsubmit.co/447166fcef88f5ba435b8fe4211486f4" method="POST">            
             <Input type="text" name="Name" placeholder="Name" required/>
             <Input type="email" name="email" placeholder="Email" required/>
