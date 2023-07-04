@@ -30,6 +30,7 @@ const List = styled.ul`
     display: flex;
     gap:20px;
     list-style: none;
+    font-family: poppins, sans-serif;
 `;
 const ListItem = styled.li`
     cursor: pointer;  
