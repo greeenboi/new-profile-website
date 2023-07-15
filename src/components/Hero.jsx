@@ -91,8 +91,26 @@ const Wrapper = styled.div`
 `;
 const Right = styled.div`
   flex:3;
+  height:auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 `;
-
+const Img = styled.img`
+    display: inline-block;
+    object-fit: contain;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: animate 3s infinite ease alternate;
+    @keyframes animate {
+      to {
+        transform: translateY(10px);
+      }
+    }
+`
 
 const Hero = () => {
   
@@ -112,7 +130,7 @@ const Hero = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{once:true,amount: 0.8}}
-                transition={{duration: 0.5, delay: 1, ease: "easeInOut"}}
+                transition={{duration: 0.6, delay: 1, ease: "easeInOut"}}
               >
                 <Title data-value="Hi! I am Suvan" className='h1_class' >Hi! I am Suvan</Title>
                 </motion.div> 
@@ -127,7 +145,20 @@ const Hero = () => {
               
             </Left>
            
-            <Right></Right>
+            <Right>
+                <motion.div
+                  variants={{
+                    hidden: {opacity: 0, y:-75,},
+                    visible: {opacity: 1, y:0, },
+                  }}
+
+                  initial="hidden"
+                  whileInView="visible"
+                  transition={{duration: 0.7, delay: 1, ease: "easeInOut"}}
+                >
+                  <Img src='/public/img/final me.png' />
+                </motion.div>
+            </Right>
           
         </Container>
     </Section>

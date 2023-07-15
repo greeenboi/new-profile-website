@@ -220,7 +220,7 @@ const Works = () => {
           <Card>
             <Card_text className='first_letter'>
               <p>
-               I am a passionate backend engineer who primarily works with Python and Flask. 
+               I am a passionate Full-Stack engineer who primarily works with Python, Flask and Javascript. 
               </p>
               <p>               
                My expertise lies in utilizing various libraries for AI/ML implementations to develop robust backend solutions. 

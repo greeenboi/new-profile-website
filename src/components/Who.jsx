@@ -101,7 +101,7 @@ const Who = (ref) => {
   };
 
   return (
-    <Section>
+    <Section >
       <Container>
         <Left>
           {isDivVisible ?(

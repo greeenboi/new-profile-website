@@ -79,7 +79,7 @@ const Footer = () => {
             </List>
         </Links>
         <Wrapper>
-            <Button className='button_class'>
+            <Button className='button_class' onClick={() => window.open("https://pdf.ac/1B5JKO")}>
                 My Resume
             </Button>
         </Wrapper>

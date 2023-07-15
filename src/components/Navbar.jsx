@@ -35,10 +35,7 @@ const List = styled.ul`
 const ListItem = styled.li`
     cursor: pointer;  
 `;
-const Icon = styled.img`
-    width: 30px;
-    cursor: pointer;   
-`;
+
 const Button = styled.button`
     align-items: center;
     backdrop-filter: blur(3px);
@@ -76,7 +73,6 @@ const Navbar = () => {
             <Logo src="./img/logo.png"/>
             
             <List>
-                <ListItem>Home</ListItem>
                 <ListItem>About</ListItem>
                 <ListItem>Works</ListItem>
                 <ListItem>Contact</ListItem>

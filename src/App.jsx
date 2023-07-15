@@ -38,7 +38,7 @@ function App({ hideLoader }) {
     <Container>
       
       <Hero />
-      <Who />
+      <Who id="about"/>
       <Works />
       <Contact />
       
