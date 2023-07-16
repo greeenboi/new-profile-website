@@ -156,7 +156,7 @@ const Hero = () => {
                   whileInView="visible"
                   transition={{duration: 0.7, delay: 1, ease: "easeInOut"}}
                 >
-                  <Img src='/public/img/final me.png' />
+                  <Img src='/img/final me.png' />
                 </motion.div>
             </Right>
           
